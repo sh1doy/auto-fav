@@ -40,7 +40,7 @@ class Autofav:
                     self.fav(tweet["id_str"])
                     print("Fav - {}: {}".format(tweet["user"]["name"], tweet["text"]))
                     break
-        self.latest_id = timeline[0]
+        self.latest_id = timeline[0]["id_str"]
 
 
 def main():
