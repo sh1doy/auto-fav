@@ -1,5 +1,5 @@
 # auto-fav
-auto fav for ego-search
+Auto fav for ego-search and collecting 'H' illustrations.
 
 ## How to use
 
