@@ -19,7 +19,6 @@ class Autofav:
     def get_timeline(self):
         params = {
             "count": "200",
-            "trim_user": "true",
             "since_id": str(self.latest_id)
         }
         req = self.sess.get("https://api.twitter.com/1.1/statuses/home_timeline.json",
