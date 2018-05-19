@@ -46,6 +46,7 @@ class Autofav:
 def main():
 
     cls = Autofav()
+    print("Session created.")
 
     while 1:
         cls.egosearh()
