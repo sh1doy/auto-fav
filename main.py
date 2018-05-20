@@ -33,13 +33,13 @@ class Autofav:
 
     def egosearh(self):
         timeline = self.get_timeline()
-        for tweet in timeline:
+        for tweet in timeline[::-1]:
             for keyword in self.keywords:
                 if keyword in tweet["text"]:
                     self.fav(tweet["id_str"])
                     print("Fav - {}: {}".format(tweet["user"]["name"], tweet["text"]))
                     break
-        self.latest_id = timeline[0]["id_str"]
+            self.latest_id = tweet["id_str"]
 
 
 def main():
